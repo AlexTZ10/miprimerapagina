@@ -1,0 +1,363 @@
+/* Estilos generales */
+ol,
+ul {
+  list-style: none;
+}
+
+header a {
+  text-decoration: none;
+  font-size: 20px;
+}
+
+img {
+  max-width: 20%;
+  height: auto;
+}
+
+body {
+  background-color: rgb(202, 194, 190);
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  display: flex;
+  background-color: rgb(172, 167, 162);
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+header nav ul {
+  display: flex;
+  gap: 20px;
+  margin-right: 20px;
+}
+
+header nav ul li a {
+  color: rgb(52, 52, 190);
+  font-weight: bold;
+}
+
+header a i {
+  color: blue;
+  margin-left: 20px;
+  font-size: 40px;
+}
+
+footer {
+  background-color: rgb(172, 167, 162);
+  padding: 1px;
+  text-align: center;
+  color: white;
+}
+
+#seccion-principal {
+  font-family: "Madimi One", sans-serif;
+}
+
+.acerca-de {
+  font-size: 20px;
+}
+
+/* Estilos de la sección 1 */
+.seccion-1 {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.acerca-de {
+  max-width: 400px;
+  box-sizing: border-box;
+  padding: 30px;
+  text-align: end;
+}
+
+.seccion-1 img {
+  width: 400px;
+  max-width: 400px;
+  box-sizing: border-box;
+  padding: 40px;
+  height: auto;
+  display: block;
+  border-radius: 10px 100px / 120px;
+}
+
+.acerca-de h1 {
+  font-size: 30px;
+}
+
+#check {
+  display: none;
+}
+
+
+.checkbtn {
+  font-size: 25px;
+  color: rgb(52, 39, 233);
+  float: right;
+  line-height: 60px;
+  margin-right: 0px;
+  cursor: pointer;
+  margin: 20px;
+  display: none;
+}
+
+
+/* Estilos de la sección 2 */
+.seccion-2 .imagen2 {
+  background-image: url("https://img.freepik.com/vector-gratis/tecnologia-inteligencia-artificial-fondo-rostro_1017-18298.jpg?size=626&ext=jpg&ga=GA1.1.87170709.1707264000&semt=ais");
+  padding: 155px;
+  justify-content: center;
+}
+
+@media (max-width: 799px) {
+  .acerca-de {
+    text-align: center;
+  }
+
+  header {
+    background-color: rgb(197, 172, 139);
+  }
+
+
+  .checkbtn {
+    display: block;
+  }
+
+
+  #encabezado ul {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: rgb(131, 156, 149);
+    text-align: center;
+
+    top: 80px;
+    left: 100%;
+    transition: all 0.5s;
+  }
+
+  #check:checked ~ ul {   /* Todos los ul que esten debajo de check*/
+    left: 0%;
+    display: block;
+  }
+
+  #encabezado nav ul li {
+    display: block;
+    margin: 50px 0;
+    line-height: 100px;
+    text-align: center;
+    margin-right: 15%;
+  }
+
+  #encabezado nav ul li a {
+    font-size: 30px;
+    color: aliceblue;
+  }
+
+  #check:checked ~ .checkbtn {
+    color:rgb(204, 76, 44);
+  }
+
+
+}
+
+
+@media (max-width: 556px) {
+  header {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+/* Estilos de la sección 3 */
+.seccion-3 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: stretch;
+}
+
+.seccion-3 img {
+  border-radius: 20px;
+  width: 100%;
+  /* Otra opción es establecer un valor específico en píxeles o porcentaje */
+  height: auto;
+  /* Mantiene la proporción de aspecto original */
+  max-width: 200px;
+  /* Establece un ancho máximo para evitar que la imagen sea demasiado grande */
+  display: block;
+  /* Elimina el espacio adicional debajo de la imagen */
+  margin: 0 auto;
+  /* Centra la imagen horizontalmente si el ancho es menor que el contenedor */
+}
+
+.trabajos {
+  width: 100%;
+  text-align: left;
+  margin: 20px;
+}
+
+.trabajos-bloques {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.b_bloque {
+  display: flex;
+  margin: 20px;
+  width: 100%;
+}
+
+.bloque {
+  border: 4px dotted blue;
+  border-radius: 10%;
+  padding: 25px;
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.descripcion {
+  text-align: justify;
+}
+
+
+@media (min-width: 768px) {
+  .b_bloque {
+    width: 45%;
+  }
+
+}
+
+
+@media (min-width: 1024px) {
+  .b_bloque {
+    width: 30%;
+  }
+}
+
+
+
+
+/*
+/* FORMULARIO 
+*/
+
+.form-header {
+  text-align: center;
+  background-color: #dfd1ce;
+  border: 5px solid #145799;
+  border-radius: 5px;
+
+  width: 80%;
+  margin: 10px auto;
+  padding: 50px;
+}
+
+.form-header h1 {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+/* ------------- Formulario ------------- */
+
+.formulario {
+  background-color: #f6f7f8;
+  border: 1px solid #d6d9dc;
+  border-radius: 3px;
+  width: 80%;
+  padding: 50px;
+  margin: 30px 0 40px 50px;
+}
+
+
+
+
+
+/* ------------- Campos del Formulario ------------- */
+
+.form-row {
+margin-bottom: 40px;
+display: flex;
+justify-content: flex-start;
+flex-direction: column;
+flex-wrap: wrap;
+}
+
+.form-row input[type="text"],
+.form-row input[type="email"]  {
+background-color: #bdbdbd;
+border: 0;
+border-radius: 6px;
+width: 100%;
+padding: 7px;
+font-size: 14px;
+}
+
+.form-row label {
+margin-bottom: 3px;
+text-align: initial;
+}
+
+
+
+.form-row textarea {
+  font-family: "Helvetica", "Arial", sans-serif;
+  font-size: 14px;
+
+
+  background-color: #bdbdbd;
+  border: 0;
+  border-radius: 6px;
+
+
+  min-height: 200px;
+  margin-bottom: 10px;
+  padding: 7px;
+  resize: none;
+
+
+  width: 100%;
+}
+
+
+
+/*  PARA EL BOTON */
+
+.form-row button {
+  font-size: 16px;
+  font-weight: bold;
+
+
+  color: #ffffff;
+  background-color: #5995da;
+
+
+  border: none;
+  border-radius: 3px;
+
+
+  padding: 10px 40px;
+  cursor: pointer;
+}
+
+.form-row button:hover {
+  background-color: #76aeed;
+}
+
+.form-row button:active {
+  background-color: #407fc7;
+}
+/* FIN PARA EL BOTON*/
+
+
+/* 
+FIN FORMULARIO 
+*/
